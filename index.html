@@ -1,0 +1,1140 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+	<link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+		href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+
+	<title>Container Converters</title>
+	<link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+	<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						primary: '#d09953',
+
+					}
+				}
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="relative flex size-full min-h-screen flex-col bg-[#fcfbf8] group/design-root overflow-x-hidden"
+		style='font-family: Manrope, "Noto Sans", sans-serif;'>
+
+		<!-- Add this right after the opening <body> tag -->
+		<div class="bg-[#d5d5d5] text-black text-xs py-2 px-4">
+			<div class="flex justify-between items-center max-w-7xl mx-auto">
+				<div class="hidden md:flex gap-6">
+					<div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16px" height="16px" viewBox="0 0 256 256" xml:space="preserve">
+
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                <path d="M 38.789 51.211 l 10.876 10.876 c 0.974 0.974 2.471 1.194 3.684 0.543 l 13.034 -6.997 c 0.964 -0.518 2.129 -0.493 3.07 0.066 l 19.017 11.285 c 1.357 0.805 1.903 2.489 1.268 3.933 c -1.625 3.698 -4.583 10.476 -5.758 13.473 c -0.247 0.631 -0.615 1.209 -1.127 1.652 c -12.674 10.986 -37.89 -2.4 -57.191 -21.701 C 6.358 45.039 -7.028 19.823 3.958 7.149 c 0.444 -0.512 1.022 -0.88 1.652 -1.127 c 2.996 -1.175 9.775 -4.133 13.473 -5.758 c 1.444 -0.635 3.128 -0.089 3.933 1.268 l 11.285 19.017 c 0.558 0.941 0.583 2.106 0.066 3.07 L 27.37 36.651 c -0.651 1.213 -0.431 2.71 0.543 3.684 C 27.913 40.335 38.789 51.211 38.789 51.211 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                            </g>
+                            </svg>
+                            <span>(254) 724 123-4567</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16px" height="16px" viewBox="0 0 256 256" xml:space="preserve">
+
+                            <defs>
+                            </defs>
+                            <g xmlns="http://www.w3.org/2000/svg" style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                <path d="M 45 42.768 l 45 -20.785 v -3.587 c 0 -3.186 -2.582 -5.768 -5.768 -5.768 H 5.768 C 2.582 12.627 0 15.209 0 18.395 v 3.587 L 45 42.768 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                                <path d="M 45 52.626 L 0 31.84 v 39.765 c 0 3.186 2.582 5.768 5.768 5.768 h 78.464 c 3.186 0 5.768 -2.582 5.768 -5.768 V 31.84 L 45 52.626 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                            </g>
+                            </svg>
+                            <span>info@containerconverters.com</span>
+                    </div>
+				</div>
+				<div class="flex gap-4">
+					<a href="#" class="hover:text-[#1c180d]">Support</a>
+					<a href="#" class="hover:text-[#1c180d]">Contact</a>
+				</div>
+			</div>
+		</div>
+
+		<header class="bg-[#fcfbf8] sticky top-0 z-50 border-b border-[#d9cdab]">
+			<nav class="max-w-7xl mx-auto px-4 py-4">
+				<div class="flex items-center justify-between">
+					<!-- Logo -->
+					<div class="text-[#1c180d] text-xl font-bold">
+						Container Converters
+					</div>
+
+					<!-- Desktop Navigation -->
+					<div class="hidden md:flex items-center gap-8">
+						<a href="#" class="text-[#1c180d] hover:text-[#9e8747]">Home</a>
+						<a href="#" class="text-[#1c180d] hover:text-[#9e8747]">Products</a>
+						<a href="#" class="text-[#1c180d] hover:text-[#9e8747]">Services</a>
+						<a href="#" class="text-[#1c180d] hover:text-[#9e8747]">About</a>
+						<button
+							class="flex items-center justify-center rounded-xl h-10 px-4 bg-primary text-[#1c180d] text-sm font-bold">
+							Get Quote
+						</button>
+					</div>
+
+					<!-- Mobile Menu Button -->
+					<button class="md:hidden" id="mobile-menu-button">
+						<svg class="w-6 h-6 text-[#1c180d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+				</div>
+
+				<!-- Mobile Menu -->
+				<div class="md:hidden hidden" id="mobile-menu">
+					<div class="flex flex-col gap-4 pt-4 pb-3">
+						<a href="#" class="text-[#1c180d] hover:text-[#9e8747]">Home</a>
+						<a href="#" class="text-[#1c180d] hover:text-[#9e8747]">Products</a>
+						<a href="#" class="text-[#1c180d] hover:text-[#9e8747]">Services</a>
+						<a href="#" class="text-[#1c180d] hover:text-[#9e8747]">About</a>
+						<button
+							class="flex items-center justify-center rounded-xl h-10 px-4 bg-primary text-[#1c180d] text-sm font-bold">
+							Get Quote
+						</button>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<script>
+			const mobileMenuButton = document.getElementById('mobile-menu-button');
+			const mobileMenu = document.getElementById('mobile-menu');
+
+			mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        body.classList.toggle('overflow-hidden');
+    });
+
+    // Close menu on larger screens
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768) {
+            mobileMenu.classList.add('hidden');
+            body.classList.remove('overflow-hidden');
+        }
+    });
+		</script>
+
+		<div class="@container">
+			<div class="@[480px]:p-4">
+				<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+					style='background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.8) 100%), url("https://cdn.usegalileo.ai/sdxl10/a35ee6f9-bf00-4383-98a2-c445166ee170.png"); '>
+					<div class="flex flex-col gap-2 text-left">
+						<h1
+							class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+							Business containers
+						</h1>
+						<h2
+							class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+							Transform your business operations with our versatile commercial container solutions. Our business containers deliver professional, modern spaces engineered for productivity and comfort
+						</h2>
+					</div>
+					<label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
+						<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+							<div class="text-[#9c8a49] flex border border-[#e8e3ce] bg-[#fcfbf8] items-center justify-center pl-[15px] rounded-l-xl border-r-0"
+								data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+									viewBox="0 0 256 256">
+									<path
+										d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+									</path>
+								</svg>
+							</div>
+							<input placeholder="Enter your email address"
+								class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c190d] focus:outline-0 focus:ring-0 border border-[#e8e3ce] bg-[#fcfbf8] focus:border-[#e8e3ce] h-full placeholder:text-[#9c8a49] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+								value="" />
+							<div
+								class="flex items-center justify-center rounded-r-xl border-l-0 border border-[#e8e3ce] bg-[#fcfbf8] pr-[7px]">
+								<button
+									class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-[#1c190d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+									<span class="truncate">Get a Quote</span>
+								</button>
+							</div>
+						</div>
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-[#fcfbf8] px-4 py-16">
+			<div class="max-w-7xl mx-auto">
+				<!-- Section Header -->
+				<div class="flex flex-col gap-2 items-center justify-center text-center mb-12">
+					<h2 class="text-[#1c180d] text-4xl font-bold leading-tight tracking-[-0.033em]">
+						About Container Converters
+					</h2>
+					<p class="text-[#9e8747] text-lg max-w-2xl">
+						Leading the industry in innovative container solutions since 2010
+					</p>
+				</div>
+		
+				<!-- Main Content -->
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+					<!-- Image Column -->
+					<div class="relative">
+						<div class="aspect-square rounded-xl overflow-hidden">
+							<img src="images/drive-thru2.jpeg" 
+								 alt="Container Converters Facility" 
+								 class="w-full h-full object-cover"/>
+						</div>
+						<div class="absolute -bottom-6 -right-6 bg-primary text-[#1c180d] p-6 rounded-xl">
+							<div class="text-4xl font-bold">13+</div>
+							<div class="text-sm">Years of Excellence</div>
+						</div>
+					</div>
+		
+					<!-- Text Content Column -->
+					<div class="flex flex-col gap-6">
+						<h3 class="text-[#1c180d] text-2xl font-bold">
+							Transforming Spaces, Empowering Businesses
+						</h3>
+						
+						<div class="space-y-4 text-[#9e8747]">
+							<p>At Container Converters, we specialize in turning standard shipping containers into extraordinary spaces that meet diverse business needs. Our commitment to quality and innovation has made us a trusted partner for businesses across industries.</p>
+							<p>We combine engineering excellence with creative design to deliver container solutions that exceed expectations. Every project benefits from our deep industry expertise and dedication to sustainable practices.</p>
+						</div>
+		
+						<!-- Stats Grid -->
+						<div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-6">
+							<div class="bg-[#f4f0e6] p-4 rounded-xl">
+								<div class="text-[#1c180d] text-3xl font-bold">500+</div>
+								<div class="text-[#9e8747] text-sm">Projects Completed</div>
+							</div>
+							<div class="bg-[#f4f0e6] p-4 rounded-xl">
+								<div class="text-[#1c180d] text-3xl font-bold">98%</div>
+								<div class="text-[#9e8747] text-sm">Client Satisfaction</div>
+							</div>
+							<div class="bg-[#f4f0e6] p-4 rounded-xl">
+								<div class="text-[#1c180d] text-3xl font-bold">24/7</div>
+								<div class="text-[#9e8747] text-sm">Support Available</div>
+							</div>
+						</div>
+		
+						<!-- CTA Button -->
+						<button class="mt-4 bg-primary text-[#1c180d] py-4 px-8 rounded-xl font-bold hover:bg-primary/90 transition-colors self-start">
+							Learn More About Us
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="px-4 py-12 bg-[#fcfbf8]">
+			<div class="max-w-7xl mx-auto">
+				<div class="flex flex-col gap-2 items-center justify-center text-center mb-12">
+					<h2 class="text-[#1c180d] text-4xl font-bold leading-tight tracking-[-0.033em]">
+						Our Container Solutions
+					</h2>
+					<p class="text-[#9e8747] text-lg">
+						Discover the perfect container for your needs
+					</p>
+				</div>
+		
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Product Card 1 -->
+					<div class="group bg-[#f4f0e6] rounded-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+						<div class="relative h-64 overflow-hidden">
+							<img src="images/raked_container2.png" 
+								 alt="Racked Container" 
+								 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+							<div class="absolute inset-0 bg-gradient-to-t from-[#1c180d]/60 to-transparent"></div>
+						</div>
+						<div class="p-6">
+							<h3 class="text-[#1c180d] text-xl font-bold mb-2">Racked Containers</h3>
+							<p class="text-[#9e8747] mb-4">Perfect for industrial storage and organization</p>
+							<div class="flex flex-wrap gap-2 mb-6">
+								<span class="bg-primary/20 text-[#1c180d] px-3 py-1 rounded-full text-sm">Customizable</span>
+								<span class="bg-primary/20 text-[#1c180d] px-3 py-1 rounded-full text-sm">Heavy-duty</span>
+								<span class="bg-primary/20 text-[#1c180d] px-3 py-1 rounded-full text-sm">Secure</span>
+							</div>
+							<button class="w-full bg-primary text-[#1c180d] py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors">
+								Learn More
+							</button>
+						</div>
+					</div>
+		
+					<!-- Product Card 2 -->
+					<div class="group bg-[#f4f0e6] rounded-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+						<div class="relative h-64 overflow-hidden">
+							<img src="https://cdn.usegalileo.ai/sdxl10/5026b72b-209e-4201-acb4-52dcee9ea961.png" 
+								 alt="Bunk House" 
+								 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+							<div class="absolute inset-0 bg-gradient-to-t from-[#1c180d]/60 to-transparent"></div>
+						</div>
+						<div class="p-6">
+							<h3 class="text-[#1c180d] text-xl font-bold mb-2">Bunk Houses</h3>
+							<p class="text-[#9e8747] mb-4">Comfortable living spaces for temporary housing</p>
+							<div class="flex flex-wrap gap-2 mb-6">
+								<span class="bg-primary/20 text-[#1c180d] px-3 py-1 rounded-full text-sm">Insulated</span>
+								<span class="bg-primary/20 text-[#1c180d] px-3 py-1 rounded-full text-sm">HVAC</span>
+								<span class="bg-primary/20 text-[#1c180d] px-3 py-1 rounded-full text-sm">Furnished</span>
+							</div>
+							<button class="w-full bg-primary text-[#1c180d] py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors">
+								Learn More
+							</button>
+						</div>
+					</div>
+		
+					<!-- Product Card 3 -->
+					<div class="group bg-[#f4f0e6] rounded-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+						<div class="relative h-64 overflow-hidden">
+							<img src="images/community-clinics1.jpeg" 
+								 alt="Mobile Clinic" 
+								 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+							<div class="absolute inset-0 bg-gradient-to-t from-[#1c180d]/60 to-transparent"></div>
+						</div>
+						<div class="p-6">
+							<h3 class="text-[#1c180d] text-xl font-bold mb-2">Mobile Clinics</h3>
+							<p class="text-[#9e8747] mb-4">Professional medical facilities on the go</p>
+							<div class="flex flex-wrap gap-2 mb-6">
+								<span class="bg-primary/20 text-[#1c180d] px-3 py-1 rounded-full text-sm">Medical-grade</span>
+								<span class="bg-primary/20 text-[#1c180d] px-3 py-1 rounded-full text-sm">Sterile</span>
+								<span class="bg-primary/20 text-[#1c180d] px-3 py-1 rounded-full text-sm">Equipped</span>
+							</div>
+							<button class="w-full bg-primary text-[#1c180d] py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors">
+								Learn More
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <div class="flex lg:grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+			<div class="flex flex-col gap-3">
+				<div class="w-full bg-center flex flex-col bg-no-repeat aspect-square bg-cover rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+					style='background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.8) 100%), url("https://cdn.usegalileo.ai/sdxl10/008028d3-539a-4396-825d-3a10ae680d74.png");'>
+					<div class="flex flex-col gap-2 text-left">
+						<h1
+							class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+							Customization
+						</h1>
+						<h2
+							class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+							Our expert team delivers tailored container solutions that perfectly match your requirements
+						</h2>
+					</div>
+					<button
+						class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+						<span class="truncate">Learn More</span>
+					</button>
+				</div>
+			</div>
+			<div class="flex flex-col gap-3">
+				<div class="w-full bg-center flex flex-col bg-no-repeat aspect-square bg-cover rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+					style='background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.8) 100%), url("https://cdn.usegalileo.ai/sdxl10/d745f4a7-03b9-44a0-9362-9d5ee0fe3bae.png");'>
+					<div class="flex flex-col gap-2 text-left">
+						<h1
+							class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+							Fabrication
+						</h1>
+						<h2
+							class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+							Our state-of-the-art fabrication facility transforms standard shipping containers into customized spaces that perfectly match your vision
+						</h2>
+					</div>
+					<button
+						class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+						<span class="truncate">Learn More</span>
+					</button>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="@container">
+			<div class="@[480px]:p-4">
+				<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+					style="background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url(&quot;https://cdn.usegalileo.ai/sdxl10/5445d584-993a-4bf1-b66f-2f4abd235f6b.png&quot;);">
+					<div class="flex flex-col gap-2 text-left">
+						<h1
+							class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+							We build mobile solutions for the world's most demanding industries
+						</h1>
+						<h2
+							class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+							From site offices to medical clinics, Container Converters is a leading manufacturer of
+							custom shipping
+							container conversions.
+						</h2>
+					</div>
+					<button
+						class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+						<span class="truncate">Learn More</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="bg-[#f4f0e6] px-4 py-16">
+			<div class="max-w-7xl mx-auto">
+				<!-- Section Header -->
+				<div class="flex flex-col gap-2 items-center justify-center text-center mb-12">
+					<h2 class="text-[#1c180d] text-4xl font-bold leading-tight tracking-[-0.033em]">
+						Our Services
+					</h2>
+					<p class="text-[#9e8747] text-lg max-w-2xl">
+						End-to-end container solutions tailored to your needs
+					</p>
+				</div>
+		
+				<!-- Services Grid -->
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Service Card 1: Design & Planning -->
+					<div class="group bg-[#fcfbf8] rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+						<div class="bg-primary/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+							</svg>
+						</div>
+						<h3 class="text-[#1c180d] text-xl font-bold mb-4">Design & Planning</h3>
+						<p class="text-[#9e8747] mb-6">Expert consultation and detailed planning to transform your vision into reality.</p>
+						<ul class="space-y-3 mb-8">
+							<li class="flex items-center gap-2 text-[#1c180d]">
+								<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+								</svg>
+								3D Visualization
+							</li>
+							<li class="flex items-center gap-2 text-[#1c180d]">
+								<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+								</svg>
+								Custom Layouts
+							</li>
+							<li class="flex items-center gap-2 text-[#1c180d]">
+								<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+								</svg>
+								Technical Specifications
+							</li>
+						</ul>
+						<button class="text-primary font-bold group-hover:text-[#1c180d] transition-colors">Learn More →</button>
+					</div>
+		
+					<!-- Service Card 2: Manufacturing -->
+					<div class="group bg-[#fcfbf8] rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+						<div class="bg-primary/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+							</svg>
+						</div>
+						<h3 class="text-[#1c180d] text-xl font-bold mb-4">Manufacturing</h3>
+						<p class="text-[#9e8747] mb-6">State-of-the-art fabrication with precision engineering and quality materials.</p>
+						<ul class="space-y-3 mb-8">
+							<li class="flex items-center gap-2 text-[#1c180d]">
+								<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+								</svg>
+								Custom Fabrication
+							</li>
+							<li class="flex items-center gap-2 text-[#1c180d]">
+								<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+								</svg>
+								Quality Control
+							</li>
+							<li class="flex items-center gap-2 text-[#1c180d]">
+								<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+								</svg>
+								Safety Certification
+							</li>
+						</ul>
+						<button class="text-primary font-bold group-hover:text-[#1c180d] transition-colors">Learn More →</button>
+					</div>
+		
+					<!-- Service Card 3: Installation -->
+					<div class="group bg-[#fcfbf8] rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+						<div class="bg-primary/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+							</svg>
+						</div>
+						<h3 class="text-[#1c180d] text-xl font-bold mb-4">Installation & Support</h3>
+						<p class="text-[#9e8747] mb-6">Professional installation and ongoing maintenance services.</p>
+						<ul class="space-y-3 mb-8">
+							<li class="flex items-center gap-2 text-[#1c180d]">
+								<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+								</svg>
+								Site Preparation
+							</li>
+							<li class="flex items-center gap-2 text-[#1c180d]">
+								<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+								</svg>
+								Professional Setup
+							</li>
+							<li class="flex items-center gap-2 text-[#1c180d]">
+								<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+								</svg>
+								Maintenance Plans
+							</li>
+						</ul>
+						<button class="text-primary font-bold group-hover:text-[#1c180d] transition-colors">Learn More →</button>
+					</div>
+				</div>
+		
+				<!-- CTA Section -->
+				<div class="mt-16 text-center">
+					<button class="bg-primary text-[#1c180d] px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-colors">
+						Schedule a Consultation
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bg-[#f4f0e6] px-4 py-16">
+			<div class="max-w-7xl mx-auto">
+				<!-- Section Header -->
+				<div class="flex flex-col gap-2 items-center justify-center text-center mb-12">
+					<h2 class="text-[#1c180d] text-4xl font-bold leading-tight tracking-[-0.033em]">
+						Featured Projects
+					</h2>
+					<p class="text-[#9e8747] text-lg max-w-2xl">
+						Explore our most innovative container transformations
+					</p>
+				</div>
+		
+				<!-- Featured Project Grid -->
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+					<!-- Main Featured Project -->
+					<div class="group relative rounded-xl overflow-hidden lg:row-span-2">
+						<img src="https://cdn.usegalileo.ai/sdxl10/a35ee6f9-bf00-4383-98a2-c445166ee170.png" 
+							 alt="Luxury Office Complex" 
+							 class="w-full h-full object-cover aspect-[3/4]"/>
+						<div class="absolute inset-0 bg-gradient-to-t from-[#1c180d] to-transparent opacity-80"></div>
+						<div class="absolute bottom-0 left-0 right-0 p-8">
+							<span class="bg-primary text-[#1c180d] px-4 py-1 rounded-full text-sm font-bold mb-4 inline-block">
+								Commercial
+							</span>
+							<h3 class="text-white text-2xl font-bold mb-2">Luxury Office Complex</h3>
+							<p class="text-white/80 mb-4">A modern 3-story office space built from 12 containers</p>
+							<button class="bg-white text-[#1c180d] px-6 py-3 rounded-xl font-bold hover:bg-primary transition-colors">
+								View Project
+							</button>
+						</div>
+					</div>
+		
+					<!-- Secondary Projects -->
+					<div class="relative rounded-xl overflow-hidden group">
+						<img src="https://cdn.usegalileo.ai/sdxl10/008028d3-539a-4396-825d-3a10ae680d74.png" 
+							 alt="Mobile Restaurant" 
+							 class="w-full h-full object-cover aspect-square"/>
+						<div class="absolute inset-0 bg-gradient-to-t from-[#1c180d] to-transparent opacity-80"></div>
+						<div class="absolute bottom-0 left-0 right-0 p-6">
+							<span class="bg-primary text-[#1c180d] px-4 py-1 rounded-full text-sm font-bold mb-4 inline-block">
+								Hospitality
+							</span>
+							<h3 class="text-white text-xl font-bold mb-2">Mobile Restaurant</h3>
+							<p class="text-white/80">Custom kitchen and dining setup</p>
+						</div>
+					</div>
+		
+					<div class="relative rounded-xl overflow-hidden group">
+						<img src="https://cdn.usegalileo.ai/stability/66b5f52e-4394-401b-822f-f00fb14d1c45.png" 
+							 alt="Healthcare Facility" 
+							 class="w-full h-full object-cover aspect-square"/>
+						<div class="absolute inset-0 bg-gradient-to-t from-[#1c180d] to-transparent opacity-80"></div>
+						<div class="absolute bottom-0 left-0 right-0 p-6">
+							<span class="bg-primary text-[#1c180d] px-4 py-1 rounded-full text-sm font-bold mb-4 inline-block">
+								Healthcare
+							</span>
+							<h3 class="text-white text-xl font-bold mb-2">Mobile Medical Center</h3>
+							<p class="text-white/80">State-of-the-art medical facility</p>
+						</div>
+					</div>
+				</div>
+		
+				<!-- View All Projects Button -->
+				<div class="text-center mt-12">
+					<button class="bg-primary text-[#1c180d] px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-colors inline-flex items-center gap-2">
+						View All Projects
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- <div class="flex items-stretch p-4 gap-3">
+			<div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+				<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col items-start justify-end px-4 pb-10 @[480px]:px-10"
+					style='background-image: url("https://cdn.usegalileo.ai/sdxl10/862166b4-8181-46e3-abbc-24766043cd9b.png");'>
+
+				</div>
+				<div>
+					<p class="text-[#1c180d] text-base font-medium leading-normal">Racked Containers</p>
+					<p class="text-[#9e8747] text-sm font-normal leading-normal">For industrial use</p>
+				</div>
+			</div>
+			<div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+				<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+					style='background-image: url("https://cdn.usegalileo.ai/sdxl10/5026b72b-209e-4201-acb4-52dcee9ea961.png");'>
+				</div>
+				<div>
+					<p class="text-[#1c180d] text-base font-medium leading-normal">Bunk Houses</p>
+					<p class="text-[#9e8747] text-sm font-normal leading-normal">Residential space</p>
+				</div>
+			</div>
+			<div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+				<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col items-start justify-end px-4 pb-10 @[480px]:px-10"
+					style='background-image: url("https://cdn.usegalileo.ai/stability/66b5f52e-4394-401b-822f-f00fb14d1c45.png");'>
+
+				</div>
+				<div>
+					<p class="text-[#1c180d] text-base font-medium leading-normal">Mobile Clinics</p>
+					<p class="text-[#9e8747] text-sm font-normal leading-normal">Healthcare facilities</p>
+				</div>
+			</div>
+		</div> -->
+		<!-- Features & Benefits Section -->
+		<div class="@container">
+			<div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10">
+				<div class="flex flex-col gap-2 items-center justify-center text-center">
+					<h2
+						class="text-[#1c180d] w-full tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+						Features & Benefits
+					</h2>
+					<p class="text-[#1c180d] text-base font-normal leading-normal max-w-[720px]">
+						Innovative solutions for your mobile space needs
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+					<!-- Feature Card 1 -->
+					<div
+						class="flex flex-col gap-4 p-6 rounded-xl bg-[#f4f0e6] hover:transform hover:scale-[1.02] transition-transform duration-300">
+						<div class="bg-primary rounded-full w-12 h-12 flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#1c180d]" fill="none"
+								viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M13 10V3L4 14h7v7l9-11h-7z" />
+							</svg>
+						</div>
+						<h3 class="text-[#1c180d] text-xl font-bold">Quick Installation</h3>
+						<p class="text-[#9e8747] text-base">Ready to use within days, not months. Minimal site
+							preparation required.
+						</p>
+					</div>
+
+					<!-- Feature Card 2 -->
+					<div
+						class="flex flex-col gap-4 p-6 rounded-xl bg-[#f4f0e6] hover:transform hover:scale-[1.02] transition-transform duration-300">
+						<div class="bg-primary rounded-full w-12 h-12 flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#1c180d]" fill="none"
+								viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+							</svg>
+						</div>
+						<h3 class="text-[#1c180d] text-xl font-bold">Built to Last</h3>
+						<p class="text-[#9e8747] text-base">Durable construction with weather-resistant materials and
+							superior
+							insulation.</p>
+					</div>
+
+					<!-- Feature Card 3 -->
+					<div
+						class="flex flex-col gap-4 p-6 rounded-xl bg-[#f4f0e6] hover:transform hover:scale-[1.02] transition-transform duration-300">
+						<div class="bg-primary rounded-full w-12 h-12 flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#1c180d]" fill="none"
+								viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+							</svg>
+						</div>
+						<h3 class="text-[#1c180d] text-xl font-bold">Customizable</h3>
+						<p class="text-[#9e8747] text-base">Flexible designs to meet your specific needs and
+							requirements.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="bg-[#fcfbf8] px-4 py-16">
+			<div class="max-w-7xl mx-auto">
+				<!-- Section Header -->
+				<div class="flex flex-col gap-2 items-center justify-center text-center mb-12">
+					<h2 class="text-[#1c180d] text-4xl font-bold leading-tight tracking-[-0.033em]">
+						Client Success Stories
+					</h2>
+					<p class="text-[#9e8747] text-lg max-w-2xl">
+						See how we've helped businesses transform their spaces
+					</p>
+				</div>
+		
+				<!-- Testimonials Carousel -->
+				<div class="relative" x-data="carousel()">
+					<div class="overflow-hidden">
+						<div class="flex transition-transform duration-500 ease-out" 
+							 x-ref="slider"
+							 @mouseenter="pause" 
+							 @mouseleave="resume">
+							<!-- Testimonial 1 -->
+							<div class="w-full flex-none md:w-1/3 px-4">
+								<div class="bg-[#f4f0e6] rounded-xl p-6 h-full">
+									<img src="images/generator-casings3.jpeg" 
+										 alt="Project Thumbnail" 
+										 class="w-full h-48 object-cover rounded-lg mb-6"/>
+									<div class="flex flex-col gap-4">
+										<p class="text-[#1c180d] italic">"Container Converters transformed our warehouse needs with an innovative storage solution. The quality and efficiency exceeded our expectations."</p>
+										<div class="mt-auto">
+											<p class="text-[#1c180d] font-bold">Sarah Achieng</p>
+											<p class="text-[#9e8747]">Operations Director, LogiTech Solutions</p>
+											<a href="#" class="text-primary font-bold mt-4 inline-block hover:underline">Read Full Case Study →</a>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+							<!-- Testimonial 2 -->
+							<div class="w-full flex-none md:w-1/3 px-4">
+								<div class="bg-[#f4f0e6] rounded-xl p-6 h-full">
+									<img src="images/community-clinic-interior.jpeg" 
+										 alt="Project Thumbnail" 
+										 class="w-full h-48 object-cover rounded-lg mb-6"/>
+									<div class="flex flex-col gap-4">
+										<p class="text-[#1c180d] italic">"The mobile clinic solution provided by Container Converters has helped us reach remote communities effectively. A game-changer for our healthcare initiative."</p>
+										<div class="mt-auto">
+											<p class="text-[#1c180d] font-bold">Dr. Michael Chen</p>
+											<p class="text-[#9e8747]">Director, HealthReach International</p>
+											<a href="#" class="text-primary font-bold mt-4 inline-block hover:underline">Read Full Case Study →</a>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+							<!-- Testimonial 3 -->
+							<div class="w-full flex-none md:w-1/3 px-4">
+								<div class="bg-[#f4f0e6] rounded-xl p-6 h-full">
+									<img src="images/shop_container_2.jpg" 
+										 alt="Project Thumbnail" 
+										 class="w-full h-48 object-cover rounded-lg mb-6"/>
+									<div class="flex flex-col gap-4">
+										<p class="text-[#1c180d] italic">"The custom office space created from containers has become our company's landmark. Innovative, sustainable, and perfectly aligned with our brand."</p>
+										<div class="mt-auto">
+											<p class="text-[#1c180d] font-bold">Robert Martinez</p>
+											<p class="text-[#9e8747]">CEO, EcoTech Innovations</p>
+											<a href="#" class="text-primary font-bold mt-4 inline-block hover:underline">Read Full Case Study →</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- Navigation Buttons -->
+					<button class="absolute left-0 top-1/2 -translate-y-1/2 bg-primary text-[#1c180d] rounded-full p-2 -ml-4 hover:bg-primary/90 transition-colors" @click="prev">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+						</svg>
+					</button>
+					<button class="absolute right-0 top-1/2 -translate-y-1/2 bg-primary text-[#1c180d] rounded-full p-2 -mr-4 hover:bg-primary/90 transition-colors" @click="next">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+		function carousel() {
+			return {
+				currentIndex: 0,
+				interval: null,
+				init() {
+					this.startAutoPlay();
+				},
+				startAutoPlay() {
+					this.interval = setInterval(() => {
+						this.next();
+					}, 5000);
+				},
+				pause() {
+					clearInterval(this.interval);
+				},
+				resume() {
+					this.startAutoPlay();
+				},
+				next() {
+					this.currentIndex = (this.currentIndex + 1) % 3;
+					this.updateSlider();
+				},
+				prev() {
+					this.currentIndex = (this.currentIndex - 1 + 3) % 3;
+					this.updateSlider();
+				},
+				updateSlider() {
+					this.$refs.slider.style.transform = `translateX(-${this.currentIndex * 33.333}%)`;
+				}
+			}
+		}
+		</script>
+		
+
+
+		<!-- Pricing Section -->
+		<div class="@container">
+			<div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10">
+				<div class="flex flex-col gap-2 items-center justify-center text-center">
+					<h2
+						class="text-[#1c180d] w-full tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+						Simple, Transparent Pricing
+					</h2>
+					<p class="text-[#1c180d] text-base font-normal leading-normal max-w-[720px]">
+						Choose the perfect container solution for your needs
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+					<!-- Basic Package -->
+					<div
+						class="flex flex-col p-6 rounded-xl bg-[#f4f0e6] border-2 border-transparent hover:border-primary transition-all duration-300">
+						<div class="flex flex-col gap-4">
+							<h3 class="text-[#1c180d] text-2xl font-bold">Basic</h3>
+							<div class="flex items-baseline gap-1">
+								<span class="text-[#1c180d] text-4xl font-bold">$2,999</span>
+								<span class="text-[#9e8747]">/unit</span>
+							</div>
+							<p class="text-[#9e8747] pb-4">Perfect for temporary site offices</p>
+							<ul class="flex flex-col gap-3 mb-8">
+								<li class="flex items-center gap-2">
+									<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+									</svg>
+									<span class="text-[#1c180d]">20ft Container</span>
+								</li>
+								<li class="flex items-center gap-2">
+									<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+									</svg>
+									<span class="text-[#1c180d]">Basic Insulation</span>
+								</li>
+								<li class="flex items-center gap-2">
+									<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+									</svg>
+									<span class="text-[#1c180d]">Standard Electrical</span>
+								</li>
+							</ul>
+						</div>
+						<button
+							class="mt-auto flex items-center justify-center rounded-xl h-12 px-5 bg-primary text-[#1c180d] text-base font-bold leading-normal tracking-[0.015em]">
+							Get Started
+						</button>
+					</div>
+
+					<!-- Premium Package -->
+					<div
+						class="flex flex-col p-6 rounded-xl bg-[#f4f0e6] border-2 border-primary relative transform hover:scale-105 transition-all duration-300">
+						<div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+							<span class="bg-primary text-[#1c180d] px-4 py-1 rounded-full text-sm font-bold">Most
+								Popular</span>
+						</div>
+						<div class="flex flex-col gap-4">
+							<h3 class="text-[#1c180d] text-2xl font-bold">Premium</h3>
+							<div class="flex items-baseline gap-1">
+								<span class="text-[#1c180d] text-4xl font-bold">$4,999</span>
+								<span class="text-[#9e8747]">/unit</span>
+							</div>
+							<p class="text-[#9e8747] pb-4">Ideal for long-term office space</p>
+							<ul class="flex flex-col gap-3 mb-8">
+								<li class="flex items-center gap-2">
+									<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+									</svg>
+									<span class="text-[#1c180d]">40ft Container</span>
+								</li>
+								<li class="flex items-center gap-2">
+									<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+									</svg>
+									<span class="text-[#1c180d]">Premium Insulation</span>
+								</li>
+								<li class="flex items-center gap-2">
+									<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+									</svg>
+									<span class="text-[#1c180d]">HVAC System</span>
+								</li>
+								<li class="flex items-center gap-2">
+									<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+									</svg>
+									<span class="text-[#1c180d]">Custom Interior</span>
+								</li>
+							</ul>
+						</div>
+						<button
+							class="mt-auto flex items-center justify-center rounded-xl h-12 px-5 bg-[#1c180d] text-white text-base font-bold leading-normal tracking-[0.015em]">
+							Get Started
+						</button>
+					</div>
+
+					<!-- Enterprise Package -->
+					<div
+						class="flex flex-col p-6 rounded-xl bg-[#f4f0e6] border-2 border-transparent hover:border-primary transition-all duration-300">
+						<div class="flex flex-col gap-4">
+							<h3 class="text-[#1c180d] text-2xl font-bold">Enterprise</h3>
+							<div class="flex items-baseline gap-1">
+								<span class="text-[#1c180d] text-4xl font-bold">Custom</span>
+							</div>
+							<p class="text-[#9e8747] pb-4">Custom solutions for large projects</p>
+							<ul class="flex flex-col gap-3 mb-8">
+								<li class="flex items-center gap-2">
+									<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+									</svg>
+									<span class="text-[#1c180d]">Multiple Units</span>
+								</li>
+								<li class="flex items-center gap-2">
+									<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+									</svg>
+									<span class="text-[#1c180d]">Custom Layouts</span>
+								</li>
+								<li class="flex items-center gap-2">
+									<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+									</svg>
+									<span class="text-[#1c180d]">Project Management</span>
+								</li>
+								<li class="flex items-center gap-2">
+									<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+									</svg>
+									<span class="text-[#1c180d]">24/7 Support</span>
+								</li>
+							</ul>
+						</div>
+						<button
+							class="mt-auto flex items-center justify-center rounded-xl h-12 px-5 bg-primary text-[#1c180d] text-base font-bold leading-normal tracking-[0.015em]">
+							Contact Sales
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- FAQ Section -->
+		<div class="@container">
+			<div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10">
+				<div class="flex flex-col gap-2 items-center justify-center text-center">
+					<h2
+						class="text-[#1c180d] w-full tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+						Frequently Asked Questions
+					</h2>
+					<p class="text-[#1c180d] text-base font-normal leading-normal max-w-[720px]">
+						Everything you need to know about our container solutions
+					</p>
+				</div>
+
+				<div class="max-w-[920px] mx-auto w-full mt-8">
+					<!-- FAQ Items -->
+					<div class="space-y-4">
+						<!-- FAQ Item 1 -->
+						<div class="border-2 border-[#f4f0e6] rounded-xl overflow-hidden">
+							<button class="faq-toggle w-full flex justify-between items-center p-6 text-left"
+								onclick="toggleFAQ(this)">
+								<span class="text-[#1c180d] font-bold">How long does installation take?</span>
+								<svg class="w-6 h-6 text-primary transform transition-transform duration-300"
+									fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M19 9l-7 7-7-7"></path>
+								</svg>
+							</button>
+							<div class="faq-content hidden px-6 pb-6">
+								<p class="text-[#9e8747]">Most standard installations are completed within 2-3 business
+									days. Custom
+									projects may take longer depending on specifications and site requirements.</p>
+							</div>
+						</div>
+
+						<!-- FAQ Item 2 -->
+						<div class="border-2 border-[#f4f0e6] rounded-xl overflow-hidden">
+							<button class="faq-toggle w-full flex justify-between items-center p-6 text-left"
+								onclick="toggleFAQ(this)">
+								<span class="text-[#1c180d] font-bold">Are your containers weather-resistant?</span>
+								<svg class="w-6 h-6 text-primary transform transition-transform duration-300"
+									fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M19 9l-7 7-7-7"></path>
+								</svg>
+							</button>
+							<div class="faq-content hidden px-6 pb-6">
+								<p class="text-[#9e8747]">Yes, all our containers are built with high-grade materials
+									and include
+									weather-resistant coatings, proper insulation, and sealed joints to withstand
+									various climate
+									conditions.</p>
+							</div>
+						</div>
+
+						<!-- FAQ Item 3 -->
+						<div class="border-2 border-[#f4f0e6] rounded-xl overflow-hidden">
+							<button class="faq-toggle w-full flex justify-between items-center p-6 text-left"
+								onclick="toggleFAQ(this)">
+								<span class="text-[#1c180d] font-bold">Do you offer customization options?</span>
+								<svg class="w-6 h-6 text-primary transform transition-transform duration-300"
+									fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M19 9l-7 7-7-7"></path>
+								</svg>
+							</button>
+							<div class="faq-content hidden px-6 pb-6">
+								<p class="text-[#9e8747]">We offer extensive customization options including size
+									variations, interior
+									layouts, electrical configurations, and specialized features to meet your specific
+									needs.</p>
+							</div>
+						</div>
+
+						<!-- FAQ Item 4 -->
+						<div class="border-2 border-[#f4f0e6] rounded-xl overflow-hidden">
+							<button class="faq-toggle w-full flex justify-between items-center p-6 text-left"
+								onclick="toggleFAQ(this)">
+								<span class="text-[#1c180d] font-bold">What warranty coverage is included?</span>
+								<svg class="w-6 h-6 text-primary transform transition-transform duration-300"
+									fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M19 9l-7 7-7-7"></path>
+								</svg>
+							</button>
+							<div class="faq-content hidden px-6 pb-6">
+								<p class="text-[#9e8747]">Our containers come with a standard 5-year structural warranty
+									and 1-year
+									warranty on installations and components. Extended warranty options are available.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Contact CTA -->
+					<div class="mt-8 text-center">
+						<p class="text-[#9e8747] mb-4">Still have questions?</p>
+						<button
+							class="inline-flex items-center justify-center rounded-xl h-12 px-8 bg-primary text-[#1c180d] text-base font-bold leading-normal tracking-[0.015em]">
+							Contact Support
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function toggleFAQ(button) {
+				const content = button.nextElementSibling;
+				const arrow = button.querySelector('svg');
+
+				// Toggle content visibility
+				content.classList.toggle('hidden');
+
+				// Rotate arrow
+				arrow.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+			}
+		</script>
+
+
+
+		<div class="@container">
+			<div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+				<div class="flex flex-col gap-2 items-center justify-center text-center">
+					<h1
+						class="text-[#1c180d] w-full tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+						Get in touch
+					</h1>
+					<p class="text-[#1c180d] text-base font-normal leading-normal max-w-[720px">Fill out the form below
+						for more
+						information</p>
+				</div>
+				<div class="flex flex-1 justify-center">
+					<label class="flex flex-col min-w-40 h-14 max-w-[480px] flex-1 @[480px]:h-16">
+						<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+							<input placeholder="Email address"
+								class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c180d] focus:outline-0 focus:ring-0 border-none bg-[#f4f0e6] focus:border-none h-full placeholder:text-[#9e8747] px-4 rounded-r-none border-r-0 pr-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+								value="" />
+							<div
+								class="flex items-center justify-center rounded-r-xl border-l-0 border-none bg-[#f4f0e6] pr-2">
+								<button
+									class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+									<span class="truncate">Submit</span>
+								</button>
+							</div>
+						</div>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="h-5 bg-[#fcfbf8]"></div>
+		<!-- Add this right before the closing </div> of the root container -->
+		<footer class="bg-[#f4f0e6] px-4 py-8 mt-auto">
+			<div class="max-w-7xl mx-auto">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- Company Info -->
+					<div class="flex flex-col gap-3">
+						<h3 class="text-[#1c180d] text-lg font-bold">Container Converters</h3>
+						<p class="text-[#9e8747] text-sm">Transforming spaces with innovative container solutions since
+							2010</p>
+					</div>
+
+					<!-- Quick Links -->
+					<div class="flex flex-col gap-3">
+						<h3 class="text-[#1c180d] text-base font-bold">Quick Links</h3>
+						<nav class="flex flex-col gap-2">
+							<a href="#" class="text-[#9e8747] text-sm hover:text-[#1c180d]">About Us</a>
+							<a href="#" class="text-[#9e8747] text-sm hover:text-[#1c180d]">Products</a>
+							<a href="#" class="text-[#9e8747] text-sm hover:text-[#1c180d]">Contact</a>
+							<a href="#" class="text-[#9e8747] text-sm hover:text-[#1c180d]">Support</a>
+						</nav>
+					</div>
+
+					<!-- Contact Info -->
+					<div class="flex flex-col gap-3">
+						<h3 class="text-[#1c180d] text-base font-bold">Contact Us</h3>
+						<div class="flex flex-col gap-2">
+							<p class="text-[#9e8747] text-sm">1234 Container Street</p>
+							<p class="text-[#9e8747] text-sm">Industrial Park, ST 12345</p>
+							<p class="text-[#9e8747] text-sm">Phone: (555) 123-4567</p>
+							<p class="text-[#9e8747] text-sm">Email: info@containerconverters.com</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mt-8 pt-6 border-t border-[#d9cdab]">
+					<p class="text-[#9e8747] text-sm text-center">© 2024 Container Converters. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+</body>
+
+</html>
